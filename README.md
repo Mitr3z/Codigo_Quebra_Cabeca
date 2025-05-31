@@ -12,5 +12,4 @@ Para preservar um padrão, já que a única maneira possível de ganhar é se um
 
 13 - 14 - 15 - X
 
-ou seja, o número de inversões precisa ser par para que se preserve o padrão, no caso de vencer, haverá nenhuma inversão nesse estado atual, porém, se daí já houver uma única inversão,
-se tornará impossível de resolver
+ou seja, o número de inversões precisa ser par para que se preserve o padrão, no caso de vencer, haverá nenhuma inversão nesse estado atual, porém, se daí já houver inversões de número ímpar, se tornará impossível de resolver
