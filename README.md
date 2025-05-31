@@ -1,4 +1,4 @@
-#O código funciona porque o número de invesões é sempre par quando ele te permite jogar
+# O código funciona porque o número de invesões é sempre par quando ele te permite jogar
 
 Para que um jogo desse estilo de quebra cabeça que desliza funcione, é preciso que o número de inversões seja par; as inversões acontecem quando um número maior está da esquerda pra direita à frente de um menor
 
