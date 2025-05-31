@@ -166,8 +166,8 @@ public class QuebraCabeca extends JFrame implements ActionListener {
         }
         
         // Para uma matriz 4x4, o quebra-cabeça é solucionável se:
-        // 1. O número de inversões é par e o espaço vazio está em uma linha ímpar (contando de baixo para cima)
-        // 2. O número de inversões é ímpar e o espaço vazio está em uma linha par (contando de baixo para cima)
+        // O número de inversões é par e o espaço vazio está em uma linha ímpar (contando de baixo para cima)
+        // O número de inversões é ímpar e o espaço vazio está em uma linha par (contando de baixo para cima)
         int linhaEspacoVazioDeBaixo = 4 - espacoVazioLinha + 1;
         
         return (inversoes % 2 == 0 && linhaEspacoVazioDeBaixo % 2 == 1) ||
