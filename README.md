@@ -16,28 +16,34 @@ ou seja, o número de inversões precisa ser par para que se preserve o padrão,
 
 E o código para isso é esse:
 
- private boolean ehSolucionavel(List<String> valores) {
+
+    private boolean ehSolucionavel(List<String> valores) {
         int inversoes = 0;
         int espacoVazioLinha = 0;
+        
         // Conta o número de inversões
         for (int i = 0; i < valores.size(); i++) {
             if (valores.get(i).equals("")) {
                 espacoVazioLinha = i / 4 + 1;
                 continue;
             }
+            
             for (int j = i + 1; j < valores.size(); j++) {
                 if (valores.get(j).equals("")) {
                     continue;
                 }
+                
                 if (Integer.parseInt(valores.get(i)) > Integer.parseInt(valores.get(j))) {
                     inversoes++;
                 }
             }
         }
+        
         // Para uma matriz 4x4, o quebra-cabeça é solucionável se:
         // O número de inversões é par e o espaço vazio está em uma linha ímpar (contando de baixo para cima)
         // O número de inversões é ímpar e o espaço vazio está em uma linha par (contando de baixo para cima)
         int linhaEspacoVazioDeBaixo = 4 - espacoVazioLinha + 1;
+        
         return (inversoes % 2 == 0 && linhaEspacoVazioDeBaixo % 2 == 1) ||
                (inversoes % 2 == 1 && linhaEspacoVazioDeBaixo % 2 == 0);
     }
